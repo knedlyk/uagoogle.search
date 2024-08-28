@@ -1,0 +1,29 @@
+{
+	"name": "UAGoogle Search",
+	"description": "Add UAgoogle to your search engines (including search suggestions from google.com.ua).",
+	"version": "0.1",
+	"manifest_version": 2,
+	"applications":{
+		"gecko": {
+			"id": "yupadmin@gmail.com",
+			"strict_min_version": "64.0"
+		}
+	},
+	"developer": {
+		"name": "Yarema aka knedlyk",
+		"url": "https://github.com/jscher2000/"
+	},
+	"icons": {
+		"32": "favicon.png"
+	},
+	"web_accessible_resources": [
+		"favicon.png"
+	],
+  "chrome_settings_overrides": {
+		"search_provider": {
+			"name": "UAGoogle",
+			"search_url": "https://www.google.com.ua/search?q={searchTerms}&lr=-lang_ru",
+			"suggest_url": "https://www.google.com.ua/complete/search?client=firefox&hl=uk-UA&q={searchTerms}&lr=-lang_ru"
+		}
+	}
+}
